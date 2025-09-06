@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contractor Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="number"] {
+            padding: 6px;
+            width: 180px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dia-row {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .sum-box {
+            width: 120px;
+            padding: 6px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .bill-input {
+            width: 120px;
+            padding: 6px;
+            border: 1px solid #ccc;
+        }
+        
+        .submit-right {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Enter Contractor Details</h2>
+    <div id="selectedPanchayat"></div>
+
+    <form id="contractForm" action="/submit" method="POST">
+        <input type="hidden" name="panchayat" id="panchayatHidden">
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="vendorCode">Vendor Code:</label>
+                <input type="text" id="vendorCode" name="vendorCode" required>
+            </div>
+            <div class="form-group">
+                <label for="contractorName">Contractor Name:</label>
+                <input type="text" id="contractorName" name="contractorName" required>
+            </div>
+            <div class="form-group">
+                <label for="SchemeID">Scheme ID:</label>
+                <input type="text" id="SchemeID" name="SchemeID" required>
+            </div>
+            <div class="form-group">
+                <label for="workDate">Date of Work:</label>
+                <input type="date" id="workDate" name="workDate" required>
+            </div>
+        </div>
+
+        <div id="diaContainer"></div>
+
+        <div class="submit-right">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        const diaValues = [75, 90, 120, 140, 150, 180, 200, 220];
+        const diaCounts = {};
+        const diaBills = {};
+        const diaLastCum = {};
+        const diaBoxes = {};
+
+        const diaContainer = document.getElementById("diaContainer");
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedPanchayat = urlParams.get('panchayat');
+        if (selectedPanchayat) {
+            document.getElementById("selectedPanchayat").innerHTML =
+                `<p><strong>Selected Panchayat:</strong> ${selectedPanchayat}</p>`;
+            document.getElementById("panchayatHidden").value = selectedPanchayat;
+        }
+
+        diaValues.forEach(value => {
+            diaCounts[value] = 0;
+            diaBills[value] = 0;
+            diaLastCum[value] = 0;
+
+            const row = document.createElement("div");
+            row.className = "dia-row";
+
+            const btn = document.createElement("button");
+            btn.textContent = `${value} dia`;
+            btn.type = "button";
+
+            const cumBox = document.createElement("div");
+            cumBox.className = "sum-box";
+            cumBox.textContent = "Cum: 0";
+
+            const prevBox = document.createElement("div");
+            prevBox.className = "sum-box";
+            prevBox.textContent = "Prev: 0";
+
+            const billInput = document.createElement("input");
+            billInput.className = "bill-input";
+            billInput.type = "number";
+            billInput.name = `bill_${value}`;
+            billInput.placeholder = "This Bill";
+
+            btn.onclick = () => {
+                diaLastCum[value] = diaCounts[value];
+                diaCounts[value] += value;
+                cumBox.textContent = `Cum: ${diaCounts[value]}`;
+            };
+
+            billInput.oninput = () => {
+                const billValue = parseInt(billInput.value) || 0;
+                diaBills[value] = billValue;
+                prevBox.textContent = `Prev: ${billValue}`;
+            };
+
+            row.appendChild(btn);
+            row.appendChild(cumBox);
+            row.appendChild(prevBox);
+            row.appendChild(billInput);
+            diaContainer.appendChild(row);
+
+            const cumInput = document.createElement("input");
+            cumInput.type = "hidden";
+            cumInput.name = `cum_${value}`;
+            cumInput.value = diaCounts[value];
+            diaContainer.appendChild(cumInput);
+
+            diaBoxes[value] = {
+                cumBox,
+                prevBox,
+                billInput,
+                cumInput
+            };
+        });
+
+        document.getElementById("contractForm").addEventListener("submit", function() {
+            diaValues.forEach(value => {
+                diaBoxes[value].cumInput.value = diaCounts[value];
+            });
+        });
+    </script>
+</body>
+
+</html>
