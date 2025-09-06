@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select Grama Panchayat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        select {
+            padding: 8px;
+            width: 200px;
+            margin-top: 10px;
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Select Your Grama Panchayat</h2>
+
+    <form id="panchayatForm">
+        <label for="panchayat">Choose a location:</label><br>
+        <select id="panchayat" name="panchayat" required>
+      <option value="">--Select--</option>
+      <option value="Aaspurdevsara">Aaspurdevsara</option>
+      <option value="Aaurain">Aaurain</option>
+      <option value="Atroramipur & Turkoli">Atroramipur & Turkoli</option>
+      <option value="Baejalpur">Baejalpur</option>
+      <option value="BANBIRPUR">BANBIRPUR</option>
+      <option value="Behta & Bijhala  ">Behta & Bijhala  </option>
+      <option value="Barokhan">Barokhan</option>
+      <option value="Bhatti khurd">Bhatti khurd</option>
+      <option value="Bhikhampur & Kopa">Bhikhampur & Kopa</option>
+      <option value="Binaeka">Binaeka</option>
+      <option value="Bind">Bind</option>
+      <option value="Dafra">Dafra</option>
+      <option value="Dahi">Dahi</option>
+      <option value="Deduaa">Deduaa</option>
+      <option value="Dhansar & Banpurva ">Dhansar & Banpurva </option>
+      <option value="Dhaurahra & Dhanepurple ">Dhaurahra & Dhanepurple </option>
+      <option value="Diyawa & Keotali">Diyawa & Keotali</option>
+      <option value="Gahbra ">Gahbra </option>
+      <option value="Govindpur">Govindpur</option>
+      <option value="Harikapura">Harikapura</option>
+      <option value="Harraipatti & Labeda">Harraipatti & Labeda</option>
+      <option value="Kabirpur">Kabirpur</option>
+      <option value="Lakhipur Kapsa & Bhushar">Lakhipur Kapsa & Bhushar</option>
+      <option value="Majhagaon">Majhagaon</option>
+      <option value="ParvatpurSuleman">ParvatpurSuleman</option>
+      <option value="Pithapur">Pithapur</option>
+      <option value="Puredalpatshah & Gauhani ">Puredalpatshah & Gauhani </option>
+      <option value="Saphachhat">Saphachhat</option>
+      <option value="Umapur & Madramu">Umapur & Madramu</option>
+      <option value="Umardiha">Umardiha</option>
+      <option value="Amarpur">Amarpur</option>
+      <option value="Amsauna & Dohari">Amsauna & Dohari</option>
+      <option value="Asalpur">Asalpur</option>
+      <option value="Baseerpur">Baseerpur</option>
+      <option value="Chakamajhanipur & Pragaspur">Chakamajhanipur & Pragaspur</option>
+      <option value="Chaukhara & Saraygani">Chaukhara & Saraygani</option>
+      <option value="Dharampur">Dharampur</option>
+      <option value="Gahari Chak">Gahari Chak</option>
+      <option value="Gavan Patti & Ganai Diha">Gavan Patti & Ganai Diha</option>
+      <option value="Goi">Goi</option>
+      <option value="Gopalpur">Gopalpur</option>
+      <option value="Harjamau">Harjamau</option>
+      <option value="Hosiyarpur">Hosiyarpur</option>
+      <option value="Jaisinghgardh">Jaisinghgardh</option>
+      <option value="Kanpamandhupur">Kanpamandhupur</option>
+      <option value="KaranpurKhujahi">KaranpurKhujahi</option>
+      <option value="Khbhor">Khbhor</option> 
+      <option value="Kothiyahi">Kothiyahi</option>
+      <option value="Maruaan & Saraynakar">Maruaan & Saraynakar</option>
+      <option value="Miranpur & Rajapur Mufharid">Miranpur & Rajapur Mufharid</option>
+      <option value="Pandari Jabar">Pandari Jabar</option>
+      <option value="PipriKhalsa">PipriKhalsa</option>
+      <option value="Praanpur">Praanpur</option>
+      <option value="Rakha">Rakha</option>
+      <option value="Sarkhailpur">Sarkhailpur</option>
+      <option value="Srinathpur">Srinathpur</option>
+      <option value="Tala">Tala</option>
+      <option value="Aamipur">Aamipur</option>
+      <option value="Aemapur Bindhan">Aemapur Bindhan</option>
+      <option value="Aruhari">Aruhari</option>
+      <option value="Baburai Jahapur">Baburai Jahapur</option>
+      <option value="Badhwait">Badhwait</option>
+      <option value="Bahorikpur">Bahorikpur</option>
+      <option value="Bakol & Arjun Ateru">Bakol & Arjun Ateru</option>
+      <option value="BALLA & DHAMMOHAN">BALLA & DHAMMOHAN</option>
+      <option value="BASWAHI">BASWAHI</option>
+      <option value="Bhaesana">Bhaesana</option>
+      <option value="Bharatgarh & Saheb Ateru">Bharatgarh & Saheb Ateru</option>
+      <option value="BhawaniganjKota">BhawaniganjKota</option>
+      <option value="Bidhasin">Bidhasin</option>
+      <option value="Chaurang">Chaurang</option>
+      <option value="Diha Balai">Diha Balai</option>
+      <option value="Fatuhabad">Fatuhabad</option>
+      <option value="GUJUWAR & SARAY CHATTA">GUJUWAR & SARAY CHATTA</option>
+      <option value="Goghar">Goghar</option>
+      <option value="Govind Nagar">Govind Nagar</option>
+      <option value="Raipur Barkhi Jalalpur Diwha">Raipur Barkhi Jalalpur Diwha</option>
+      <option value="Jaichandrapur & Muraini">Jaichandrapur & Muraini</option>
+      <option value="Jhingur & Gopalapur">Jhingur & Gopalapur</option>
+      <option value="Kajipur Kusemer">Kajipur Kusemer</option>
+      <option value="Kanava">Kanava</option>
+      <option value="Kodar Khurd & Rahuwar">Kodar Khurd & Rahuwar</option>
+      <option value="Lallupatti">Lallupatti</option>
+      <option value="Machheha Harda Patti">Machheha Harda Patti</option>
+      <option value="Mahewa Malkiya">Mahewa Malkiya</option>
+      <option value="Maladhar Chhatta">Maladhar Chhatta</option>
+      <option value="Mohammadpur Sohag">Mohammadpur Sohag</option>
+      <option value="Nariyawan">Nariyawan</option>
+      <option value="Patna">Patna</option>
+      <option value="Pritampur">Pritampur</option>
+      <option value="Puraeli Makhdumpur">Puraeli Makhdumpur</option>
+      <option value="Pure Jhau">Pure Jhau</option>
+      <option value="Pure Masvan">Pure Masvan</option>
+      <option value="Purmai Sultanpur">Purmai Sultanpur</option>
+      <option value="Raygardh">Raygardh</option>
+      <option value="Raikashipur">Raikashipur</option>
+      <option value="Rajapur">Rajapur</option>
+      <option value="Ramaipur">Ramaipur</option>
+      <option value="Ramnagar">Ramnagar</option>
+      <option value="Salembhadari">Salembhadari</option>
+      <option value="Salempur Dadeura & Kajepur Karam Husen">Salempur Dadeura & Kajepur Karam Husen</option>
+      <option value="Sarai Swami">Sarai Swami</option>
+      <option value="Saray Khandev">Saray Khandev</option>
+      <option value="Saray gopal">Saray gopal</option>
+      <option value="TANDA AND PEENG">TANDA AND PEENG</option>
+      <option value="Wajirpur">Wajirpur</option>
+      <option value="Aaemna Jaatupur & Samnaspur Daamno">Aaemna Jaatupur & Samnaspur Daamno</option>
+      <option value="Aautaarpur">Aautaarpur</option>
+      <option value="Bansiyara">Bansiyara</option>
+      <option value="Barbaspur">Barbaspur</option>
+      <option value="Barna">Barna</option>
+      <option value="Bedhan Gopalpur">Bedhan Gopalpur</option>
+      <option value="Bhawanpur">Bhawanpur</option>
+      <option value="Bhitara & Hariharpur">Bhitara & Hariharpur</option>
+      <option value="BhitipureNain">BhitipureNain</option>
+      <option value="Bihariya">Bihariya</option>
+      <option value="Bikara">Bikara</option>
+      <option value="Burhepur">Burhepur</option>
+      <option value="Chakwad">Chakwad</option>
+      <option value="Chhatar">Chhatar</option>
+      <option value="Chheuga">Chheuga</option>
+      <option value="Devari Hardoi Patti & Narangapur">Devari Hardoi Patti & Narangapur</option>
+      <option value="Devarpatti & Silawatpur">Devarpatti & Silawatpur</option>
+      <option value="Dhanvaasa & Kodrajeet">Dhanvaasa & Kodrajeet</option>
+      <option value="Galgali, Tarapur Kandai">Galgali, Tarapur Kandai</option>
+      <option value="Garibpur">Garibpur</option>
+      <option value="Gogaer">Gogaer</option>
+      <option value="Jamlamau">Jamlamau</option>
+      <option value="Kamaarjeet Patti">Kamaarjeet Patti</option>
+      <option value="Kamoli Veerbhanupur">Kamoli Veerbhanupur</option>
+      <option value="Kanupur">Kanupur</option>
+      <option value="Kashipur Dibuki">Kashipur Dibuki</option>
+      <option value="Khargipur & Phoolpur Rama">Khargipur & Phoolpur Rama</option>
+      <option value="Khasar">Khasar</option>
+      <option value="Khatwara">Khatwara</option>
+      <option value="Khemkaranpur">Khemkaranpur</option>
+      <option value="Kodrasal">Kodrasal</option>
+      <option value="Korahi">Korahi</option>
+      <option value="Kuda">Kuda</option>
+      <option value="Maharajpur">Maharajpur</option>
+      <option value="Malaak Tilhai">Malaak Tilhai</option>
+      <option value="Mandal Bhausaw">Mandal Bhausaw</option>
+      <option value="Meerpur Banohi">Meerpur Banohi</option>
+      <option value="Pariyawan & Lochangarh">Pariyawan & Lochangarh</option>
+      <option value="Pithipur">Pithipur</option>
+      <option value="Ramdaspatti">Ramdaspatti</option>
+      <option value="Ramgarh Banohi">Ramgarh Banohi</option>
+      <option value="Rampur">Rampur</option>
+      <option value="Raipur">Raipur</option>
+      <option value="Sarai Babuin & Dharhupur">Sarai Babuin & Dharhupur</option>
+      <option value="Sarai Naahra">Sarai Naahra</option>
+      <option value="Saray Mahasingh">Saray Mahasingh</option>
+      <option value="Saray Said Kha">Saray Said Kha</option>
+      <option value="Sheshapur Chauras">Sheshapur Chauras</option>
+      <option value="Siya">Siya</option>
+      <option value="Tekki Patti">Tekki Patti</option>
+      <option value="Tiwari Mehmadapur">Tiwari Mehmadapur</option>
+      <option value="Trilokpur & Bhav">Trilokpur & Bhav</option>
+      <option value="Umari Bujurg">Umari Bujurg</option>
+      <option value="Umari Kotila">Umari Kotila</option>
+      <option value="Umarpatti">Umarpatti</option>
+      <option value="Aandharipur">Aandharipur</option>
+      <option value="Antamau">Antamau</option>
+      <option value="Asthan">Asthan</option>
+      <option value="Badera">Badera</option>
+      <option value="Badgau">Badgau</option>
+      <option value="Bariyavan & Natohi">Bariyavan & Natohi</option>
+      <option value="Bijalipur Bangadhwa & Trilochanpur">Bijalipur Bangadhwa & Trilochanpur</option>
+      <option value="Bramhauli">Bramhauli</option>
+      <option value="Chachamau">Chachamau</option>
+      <option value="Chandapur & Dayalpur">Chandapur & Dayalpur</option>
+      <option value="Chaurahi & Bajhabit & Miragadwa">Chaurahi & Bajhabit & Miragadwa</option>
+      <option value="Chindaura & Seshomohammadpur">Chindaura & Seshomohammadpur</option>
+      <option value="Eethu">Eethu</option>
+      <option value="Jajupur">Jajupur</option>
+      <option value="Janvamau">Janvamau</option>
+      <option value="Kakriha & Abdulwahidganj">Kakriha & Abdulwahidganj</option>
+      <option value="Kandaru">Kandaru</option>
+      <option value="Karamganj & Samaspur Sailwara">Karamganj & Samaspur Sailwara</option>
+      <option value="Kasipur">Kasipur</option>
+      <option value="Keravdiha">Keravdiha</option>
+      <option value="Lathtara">Lathtara</option>
+      <option value="Maddupur & Rokiyapur">Maddupur & Rokiyapur</option>
+      <option value="Madhwapur">Madhwapur</option>
+      <option value="Manar & Ranimau">Manar & Ranimau</option>
+      <option value="Mishrpur">Mishrpur</option>
+      <option value="Mohamidpur And Kiyawan">Mohamidpur And Kiyawan</option>
+      <option value="Parsai">Parsai</option>
+      <option value="Pithanapur">Pithanapur</option>
+      <option value="Rajwapur">Rajwapur</option>
+      <option value="Rewali">Rewali</option>
+      <option value="Sangrampur & Hinahu">Sangrampur & Hinahu</option>
+      <option value="Seshpur">Seshpur</option>
+      <option value="Seshpurdhnpur">Seshpurdhnpur</option>
+      <option value="Tiwaripur">Tiwaripur</option>
+      <option value="Adhiya">Adhiya</option>
+      <option value="Ahibaranpur">Ahibaranpur</option>
+      <option value="Akthiyari Kotila">Akthiyari Kotila</option>
+      <option value="Bachandamau">Bachandamau</option>
+      <option value="Bachrauli">Bachrauli</option>
+      <option value="Bahadurpur">Bahadurpur</option>
+      <option value="Banemau Uparhar">Banemau Uparhar</option>
+      <option value="Bhadri & Bishiya">Bhadri & Bishiya</option>
+      <option value="Chakadarali">Chakadarali</option>
+      <option value="Chakaparanpur">Chakaparanpur</option>
+      <option value="Chausa">Chausa</option>
+      <option value="Dadauli">Dadauli</option>
+      <option value="Deeha">Deeha</option>
+      <option value="Dilerganj">Dilerganj</option>
+      <option value="Dumwamai">Dumwamai</option>
+      <option value="Gayaspur">Gayaspur</option>
+      <option value="Itaura">Itaura</option>
+      <option value="Jakhamai">Jakhamai</option>
+      <option value="Jasholi & Kushahil Bazar">Jasholi & Kushahil Bazar</option>
+      <option value="Kaema">Kaema</option>
+      <option value="Kajipur Maharajganj">Kajipur Maharajganj</option>
+      <option value="Karenati">Karenati</option>
+      <option value="Keshavpura & Rudauli">Keshavpura & Rudauli</option>
+      <option value="Khemipur">Khemipur</option>
+      <option value="Kushildiha">Kushildiha</option>
+      <option value="Launda & Mamauli">Launda & Mamauli</option>
+      <option value="Maharajpur & Kashipur Mohan">Maharajpur & Kashipur Mohan</option>
+      <option value="Mahewamohanpur & Mohaddinagar Uparhar">Mahewamohanpur & Mohaddinagar Uparhar</option>
+      <option value="Majhilgaon">Majhilgaon</option>
+      <option value="Malakarajakpur">Malakarajakpur</option>
+      <option value="Mauli">Mauli</option>
+      <option value="Mavai Kalan">Mavai Kalan</option>
+      <option value="Naubasta">Naubasta</option>
+      <option value="Pahadpur Banohi">Pahadpur Banohi</option>
+      <option value="Panahnagarbarai">Panahnagarbarai</option>
+      <option value="Parewanarayanpur">Parewanarayanpur</option>
+      <option value="Parsipur">Parsipur</option>
+      <option value="Peer Nagar">Peer Nagar</option>
+      <option value="Pingri">Pingri</option>
+      <option value="Raiypur">Raiypur</option>
+      <option value="Rehwai">Rehwai</option>
+      <option value="Sahabpur & Tajunddinpur">Sahabpur & Tajunddinpur</option>
+      <option value="Sahumai">Sahumai</option>
+      <option value="Saja">Saja</option>
+      <option value="Saraykirat">Saraykirat</option>
+      <option value="Sariya Praveshpur">Sariya Praveshpur</option>
+      <option value="Sekhpur Asik">Sekhpur Asik</option>
+      <option value="Shahpur Uparhar">Shahpur Uparhar</option>
+      <option value="Shergarh & Sariyawa">Shergarh & Sariyawa</option>
+      <option value="Sujauli">Sujauli</option>
+      <option value="Barapur Bhika">Barapur Bhika</option>
+      <option value="Gaheri">Gaheri</option>
+      <option value="Sarai Makai">Sarai Makai</option>
+      <option value="Asainapur & Dagrara">Asainapur & Dagrara</option>
+      <option value="Asrahi">Asrahi</option>
+      <option value="Basupur">Basupur</option>
+      <option value="Belha">Belha</option>
+      <option value="Bhojpur">Bhojpur</option>
+      <option value="Devapur">Devapur</option>
+      <option value="Gaukhadi & Udhranpur">Gaukhadi & Udhranpur</option>
+      <option value="Khajuri">Khajuri</option>
+      <option value="Khemsari">Khemsari</option>
+      <option value="Mandipur">Mandipur</option>
+      <option value="Medhawan">Medhawan</option>
+      <option value="Pahadpur">Pahadpur</option>
+      <option value="Pandri">Pandri</option>
+      <option value="Parsupur">Parsupur</option>
+      <option value="Pure Bansi">Pure Bansi</option>
+      <option value="Pure Roop">Pure Roop</option>
+      <option value="Puretilakram">Puretilakram</option>
+      <option value="Ramgarhkhas & Hulasgarh">Ramgarhkhas & Hulasgarh</option>
+      <option value="Rangardh Raela & Saray Raju">Rangardh Raela & Saray Raju</option>
+      <option value="Rangauli">Rangauli</option>
+      <option value="Rohada & Delhupur & Kalapur">Rohada & Delhupur & Kalapur</option>
+      <option value="Sarayjagat Singh">Sarayjagat Singh</option>
+      <option value="Saraynarayan Singh & Bhebhaura">Saraynarayan Singh & Bhebhaura</option>
+      <option value="Saripur">Saripur</option>
+      <option value="Tarapur">Tarapur</option>
+      <option value="Bhagwanpur">Bhagwanpur</option>
+      <option value="Lilauli">Lilauli</option>
+      <option value="Madhupur">Madhupur</option>
+      <option value="Puraila">Puraila</option>
+      <option value="Rampur Mustarka">Rampur Mustarka</option>
+      <option value="Amuwahi">Amuwahi</option>
+      <option value="Atarsand & Parsupur">Atarsand & Parsupur</option>
+      <option value="Aurangabad">Aurangabad</option>
+      <option value="Barasarai">Barasarai</option>
+      <option value="Barhupur">Barhupur</option>
+      <option value="Bhaedpur">Bhaedpur</option>
+      <option value="Bhausiya">Bhausiya</option>
+      <option value="Choumari">Choumari</option>
+      <option value="Darchut">Darchut</option>
+      <option value="Dehridigar">Dehridigar</option>
+      <option value="Dhraulimufrid & Chanduadih">Dhraulimufrid & Chanduadih</option>
+      <option value="Gehrauli">Gehrauli</option>
+      <option value="Hardoi">Hardoi</option>
+      <option value="Hathsara">Hathsara</option>
+      <option value="Itwa">Itwa</option>
+      <option value="Kansapatti">Kansapatti</option>
+      <option value="Koni & Salahipur Kanjas">Koni & Salahipur Kanjas</option>
+      <option value="Lauli Pokhatakham">Lauli Pokhatakham</option>
+      <option value="Madura Raniganj & Sarauli">Madura Raniganj & Sarauli</option>
+      <option value="Malaak">Malaak</option>
+      <option value="Mandah & Bojhi">Mandah & Bojhi</option>
+      <option value="Mangraura">Mangraura</option>
+      <option value="Nevra">Nevra</option>
+      <option value="Padumpur">Padumpur</option>
+      <option value="Parsanda">Parsanda</option>
+      <option value="Purebhikha & Raigarh">Purebhikha & Raigarh</option>
+      <option value="Puremanikanth">Puremanikanth</option>
+      <option value="Sakra">Sakra</option>
+      <option value="Sarayjmuvari">Sarayjmuvari</option>
+      <option value="Sheshapur Adharganj">Sheshapur Adharganj</option>
+      <option value="Shivpur Khurd">Shivpur Khurd</option>
+      <option value="Sirsidih">Sirsidih</option>
+      <option value="Suryagarhjagannath">Suryagarhjagannath</option>
+      <option value="Utras">Utras</option>
+      <option value="Bahuta">Bahuta</option>
+      <option value="Basauli">Basauli</option>
+      <option value="Beerpura Khurd & Parsad">Beerpura Khurd & Parsad</option>
+      <option value="Besaar">Besaar</option>
+      <option value="Bhavranpur">Bhavranpur</option>
+      <option value="Bibipur Baradih">Bibipur Baradih</option>
+      <option value="Charaeya & Asudi">Charaeya & Asudi</option>
+      <option value="Chintamanipur & Andevari">Chintamanipur & Andevari</option>
+      <option value="Dadupur">Dadupur</option>
+      <option value="Dhuti">Dhuti</option>
+      <option value="Gogalapur & Puredeojani">Gogalapur & Puredeojani</option>
+      <option value="Kohraov">Kohraov</option>
+      <option value="Kukuvar">Kukuvar</option>
+      <option value="Mahadaha">Mahadaha</option>
+      <option value="Marha">Marha</option>
+      <option value="Naurangabad">Naurangabad</option>
+      <option value="Parsani">Parsani</option>
+      <option value="Purebasan & Aaumisaraysaifkha">Purebasan & Aaumisaraysaifkha</option>
+      <option value="Raichandrapatti & Arila">Raichandrapatti & Arila</option>
+      <option value="RampurBela">RampurBela</option>
+      <option value="Sarastpur">Sarastpur</option>
+      <option value="Sardeeh">Sardeeh</option>
+      <option value="Srinathpur & Mariyampur">Srinathpur & Mariyampur</option>
+      <option value="Sumatpur">Sumatpur</option>
+      <option value="Tardha">Tardha</option>
+      <option value="Thanegopapur">Thanegopapur</option>
+      <option value="Umarpur & Bani">Umarpur & Bani</option>
+      <option value="Usrauli">Usrauli</option>
+      <option value="Varikhurd & Dashrathpur">Varikhurd & Dashrathpur</option>
+      <option value="Virauti & Ramkola">Virauti & Ramkola</option>
+      <option value="Alipur">Alipur</option>
+      <option value="Arjunpur & Madhukarpur">Arjunpur & Madhukarpur</option>
+      <option value="Batauli">Batauli</option>
+      <option value="Bharatpur">Bharatpur</option>
+      <option value="Budhiyapur">Budhiyapur</option>
+      <option value="Bijumau">Bijumau</option>
+      <option value="Birbhadrapur">Birbhadrapur</option>
+      <option value="Chakerhi & Nevada Kalan">Chakerhi & Nevada Kalan</option>
+      <option value="Digaosi">Digaosi</option>
+      <option value="Jamalpur">Jamalpur</option>
+      <option value="Kalyanpur & Purefhattesingh">Kalyanpur & Purefhattesingh</option>
+      <option value="Kanyaeyadullapur & Harnahar">Kanyaeyadullapur & Harnahar</option>
+      <option value="Kedaura">Kedaura</option>
+      <option value="Kherapurechemi & Purebasantray">Kherapurechemi & Purebasantray</option>
+      <option value="Lakuri">Lakuri</option>
+      <option value="Lohangpur">Lohangpur</option>
+      <option value="Madamai">Madamai</option>
+      <option value="Mishrainpur">Mishrainpur</option>
+      <option value="Mohammadpur Khas">Mohammadpur Khas</option>
+      <option value="Mothin">Mothin</option>
+      <option value="Narayanpur">Narayanpur</option>
+      <option value="Pure Chhattu">Pure Chhattu</option>
+      <option value="Pure Gajai">Pure Gajai</option>
+      <option value="Pure Jodha">Pure Jodha</option>
+      <option value="Rampur Vavli">Rampur Vavli</option>
+      <option value="Saray Lalmati & Khandwa">Saray Lalmati & Khandwa</option>
+      <option value="Bandanpur & Teuanga">Bandanpur & Teuanga</option>
+      <option value="Bhilampur & Bahlolpur">Bhilampur & Bahlolpur</option>
+      <option value="Chakbantod">Chakbantod</option>
+      <option value="Chaukhandpureanti">Chaukhandpureanti</option>
+      <option value="Gode">Gode</option>
+      <option value="Ishipur">Ishipur</option>
+      <option value="Jagdeeshpur & Purebhaiya">Jagdeeshpur & Purebhaiya</option>
+      <option value="Jahnaipur & Kushami & Saraybheliya">Jahnaipur & Kushami & Saraybheliya</option>
+      <option value="Jaitipurkathar">Jaitipurkathar</option>
+      <option value="Kadipur And Bhanva">Kadipur And Bhanva</option>
+      <option value="Katkavalli">Katkavalli</option>
+      <option value="Khampur & Saray Dali">Khampur & Saray Dali</option>
+      <option value="Kisundadpur & Mahuaar">Kisundadpur & Mahuaar</option>
+      <option value="Madupur, Sakrauli & Ajgara">Madupur, Sakrauli & Ajgara</option>
+      <option value="Naubasta & Kushfara">Naubasta & Kushfara</option>
+      <option value="Nevada Kala & Dekahi">Nevada Kala & Dekahi</option>
+      <option value="Pratapgarhgramin & Banbeerkach">Pratapgarhgramin & Banbeerkach</option>
+      <option value="Pure Madhav Singh & Gadichakdeiya">Pure Madhav Singh & Gadichakdeiya</option>
+      <option value="Pure Mustafa">Pure Mustafa</option>
+      <option value="Rajapur Kalan">Rajapur Kalan</option>
+      <option value="Ramnagar">Ramnagar</option>
+      <option value="Saraybeerbhadra">Saraybeerbhadra</option>
+      <option value="Setapur">Setapur</option>
+      <option value="Variya Samudra">Variya Samudra</option>
+      <option value="Arjunpura">Arjunpura</option>
+      <option value="Ashapur & Chaubeypur">Ashapur & Chaubeypur</option>
+      <option value="Bajhan">Bajhan</option>
+      <option value="Bansi">Bansi</option>
+      <option value="Barendra & Singhni">Barendra & Singhni</option>
+      <option value="Barista & Basupur">Barista & Basupur</option>
+      <option value="Bhadausi & Rampur Praan">Bhadausi & Rampur Praan</option>
+      <option value="Bhawanipur">Bhawanipur</option>
+      <option value="Dandupur Daulat">Dandupur Daulat</option>
+      <option value="Gauhani & Pachkhara">Gauhani & Pachkhara</option>
+      <option value="Gaura Dand">Gaura Dand</option>
+      <option value="Gobari">Gobari</option>
+      <option value="Jalapur">Jalapur</option>
+      <option value="Kalayanpur Mauraha">Kalayanpur Mauraha</option>
+      <option value="Kalyanpur Dadiwach">Kalyanpur Dadiwach</option>
+      <option value="Khaira Gaurbari & Adhaarpur">Khaira Gaurbari & Adhaarpur</option>
+      <option value="Lakhraon">Lakhraon</option>
+      <option value="Makaipur">Makaipur</option>
+      <option value="Mehmadapur">Mehmadapur</option>
+      <option value="Nari">Nari</option>
+      <option value="Para Hamidpur">Para Hamidpur</option>
+      <option value="Pure Bharat">Pure Bharat</option>
+      <option value="Pure Pandey Kamora & Tejgarh">Pure Pandey Kamora & Tejgarh</option>
+      <option value="Pure Parmeshwar">Pure Parmeshwar</option>
+      <option value="Rajapur Raeniya & Nevada Gauradand">Rajapur Raeniya & Nevada Gauradand</option>
+      <option value="Sandwa Chandika And Katka Manpur">Sandwa Chandika And Katka Manpur</option>
+      <option value="Sangrampur">Sangrampur</option>
+      <option value="Shivrajpur">Shivrajpur</option>
+      <option value="Sukulpur & Chauraha">Sukulpur & Chauraha</option>
+      <option value="Tiwaripur">Tiwaripur</option>
+      <option value="Trilokpur Visai">Trilokpur Visai</option>
+      <option value="Upadhyaypur">Upadhyaypur</option>
+      <option value="Usari">Usari</option>
+      <option value="Aasanva">Aasanva</option>
+      <option value="Alavalpur">Alavalpur</option>
+      <option value="Amawa & Semra">Amawa & Semra</option>
+      <option value="Atheha">Atheha</option>
+      <option value="Badshapur">Badshapur</option>
+      <option value="Bewali">Bewali</option>
+      <option value="Bhagatpur">Bhagatpur</option>
+      <option value="Bhawanigarh">Bhawanigarh</option>
+      <option value="Deuma Poorab">Deuma Poorab</option>
+      <option value="Gadiyaan & Shukulpur">Gadiyaan & Shukulpur</option>
+      <option value="Indilpur">Indilpur</option>
+      <option value="Jogapur">Jogapur</option>
+      <option value="Katehti">Katehti</option>
+      <option value="Khanipur">Khanipur</option>
+      <option value="Kumbhidiha">Kumbhidiha</option>
+      <option value="Muraeni">Muraeni</option>
+      <option value="Narval">Narval</option>
+      <option value="Pattikachera & Ahabidihad">Pattikachera & Ahabidihad</option>
+      <option value="Pedariya">Pedariya</option>
+      <option value="Pinjari">Pinjari</option>
+      <option value="Pranipur & Mustafabad">Pranipur & Mustafabad</option>
+      <option value="Pure Bhagvat & Pure Loka">Pure Bhagvat & Pure Loka</option>
+      <option value="Pure Narayandas">Pure Narayandas</option>
+      <option value="Saruaava">Saruaava</option>
+      <option value="Singhgarh">Singhgarh</option>
+      <option value="Uchapur & Rampur Kasiha">Uchapur & Rampur Kasiha</option>
+      <option value="Usmanpur">Usmanpur</option>
+      <option value="Bijemau & Visanpur">Bijemau & Visanpur</option>
+      <option value="Jariyari">Jariyari</option>
+      <option value="Rajapur & Naseerpur">Rajapur & Naseerpur</option>
+      <option value="Rasoeya & PremdarPatti">Rasoeya & PremdarPatti</option>
+    </select>
+        <br>
+        <button type="submit">Next</button>
+    </form>
+
+    <script>
+        document.getElementById("panchayatForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const selected = document.getElementById("panchayat").value;
+            if (selected) {
+                window.location.href = `/details?panchayat=${encodeURIComponent(selected)}`;
+            }
+        });
+    </script>
+</body>
+
+</html>
